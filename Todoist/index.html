@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/logo.jpg">
+    <title>To do list webapp</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Add your logo or icon image here -->
+            <img src="Assets/logo.jpg" alt="Todoist Logo">
+            <p>Todo App</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#todo">Todo</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content" id="home">
+        <div class="content-wrapper">
+            <h1>Organize your work <br> and life, finally.</h1>
+            <p>Become focused, organized, and calm with Todo App.</p>
+            <a href="#signup" class="btn">Get Started</a>
+        </div>
+        <div class="video-wrapper">
+            <video autoplay muted loop id="bgVideo">
+                <!-- Provide video sources for different formats -->
+                <source src="Assets/video-bg.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+    </section>
+    
+    
+
+    <!-- Additional sections as needed -->
+
+    <section class="features" id="features">
+        
+        <div class="myHeading">
+            <p>
+                Less complexity, more productivity. <br> 
+                Experience simplicity with our to-do list features.
+            </p>
+        </div>
+
+        <div class="features-list">
+            
+            <div class="feature-video">
+                <video width="640" height="400" autoplay muted loop>
+                    <source src="Assets/video-todo.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class="myList">
+                <ul>
+                    <li>Task Creation and Editing</li>
+                    <li>Task Organization</li>
+                    <li>Task Priority</li>
+                    <li>Due Dates and Reminders</li>
+                    <li>Subtasks</li>
+                    <!-- Add more features as needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="todo" id="todo">
+        <div class="img-todo">
+            <img src="Assets/todo.jpg" alt="todo img">
+        </div>
+        <div class="container">
+            <h1>To-Do List</h1>
+            <div id="task-form">
+                <input type="text" id="task-input" placeholder="Enter your task">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+            <ul id="task-list"></ul>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Todoist. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
