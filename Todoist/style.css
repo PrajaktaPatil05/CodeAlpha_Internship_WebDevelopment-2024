@@ -105,7 +105,7 @@ section {
     bottom: -18rem;
     left: 0;
     height: 100%;
-    z-index: 1; /* Place the video behind the content */
+    z-index: 1; 
 }
 
 .content-wrapper h1 {
